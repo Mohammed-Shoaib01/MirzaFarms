@@ -1,0 +1,814 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MIRZA FARMS - 100% Zabiha Halal Meat | Indian Pakistani Grocery</title>
+    <style>
+        :root {
+  /* Primitive Color Tokens */
+  --color-white: rgba(255, 255, 255, 1);
+  --color-black: rgba(0, 0, 0, 1);
+  --color-cream-50: rgba(252, 252, 249, 1);
+  --color-cream-100: rgba(255, 255, 253, 1);
+  --color-gray-200: rgba(245, 245, 245, 1);
+  --color-gray-300: rgba(167, 169, 169, 1);
+  --color-gray-400: rgba(119, 124, 124, 1);
+  --color-slate-500: rgba(98, 108, 113, 1);
+  --color-brown-600: rgba(94, 82, 64, 1);
+  --color-charcoal-700: rgba(31, 33, 33, 1);
+  --color-charcoal-800: rgba(38, 40, 40, 1);
+  --color-slate-900: rgba(19, 52, 59, 1);
+  --color-teal-300: rgba(50, 184, 198, 1);
+  --color-teal-400: rgba(45, 166, 178, 1);
+  --color-teal-500: rgba(33, 128, 141, 1);
+  --color-teal-600: rgba(29, 116, 128, 1);
+  --color-teal-700: rgba(26, 104, 115, 1);
+  --color-teal-800: rgba(41, 150, 161, 1);
+  --color-red-400: rgba(255, 84, 89, 1);
+  --color-red-500: rgba(192, 21, 47, 1);
+  --color-orange-400: rgba(230, 129, 97, 1);
+  --color-orange-500: rgba(168, 75, 47, 1);
+
+  /* RGB versions for opacity control */
+  --color-brown-600-rgb: 94, 82, 64;
+  --color-teal-500-rgb: 33, 128, 141;
+  --color-slate-900-rgb: 19, 52, 59;
+  --color-slate-500-rgb: 98, 108, 113;
+  --color-red-500-rgb: 192, 21, 47;
+  --color-red-400-rgb: 255, 84, 89;
+  --color-orange-500-rgb: 168, 75, 47;
+  --color-orange-400-rgb: 230, 129, 97;
+
+  /* Background color tokens (Light Mode) */
+  --color-bg-1: rgba(59, 130, 246, 0.08);
+  --color-bg-2: rgba(245, 158, 11, 0.08);
+  --color-bg-3: rgba(34, 197, 94, 0.08);
+  --color-bg-4: rgba(239, 68, 68, 0.08);
+  --color-bg-5: rgba(147, 51, 234, 0.08);
+  --color-bg-6: rgba(249, 115, 22, 0.08);
+  --color-bg-7: rgba(236, 72, 153, 0.08);
+  --color-bg-8: rgba(6, 182, 212, 0.08);
+
+  /* Semantic Color Tokens (Light Mode) */
+  --color-background: var(--color-cream-50);
+  --color-surface: var(--color-cream-100);
+  --color-text: var(--color-slate-900);
+  --color-text-secondary: var(--color-slate-500);
+  --color-primary: var(--color-teal-500);
+  --color-primary-hover: var(--color-teal-600);
+  --color-primary-active: var(--color-teal-700);
+  --color-secondary: rgba(var(--color-brown-600-rgb), 0.12);
+  --color-secondary-hover: rgba(var(--color-brown-600-rgb), 0.2);
+  --color-secondary-active: rgba(var(--color-brown-600-rgb), 0.25);
+  --color-border: rgba(var(--color-brown-600-rgb), 0.2);
+  --color-btn-primary-text: var(--color-cream-50);
+  --color-card-border: rgba(var(--color-brown-600-rgb), 0.12);
+  --color-card-border-inner: rgba(var(--color-brown-600-rgb), 0.12);
+  --color-error: var(--color-red-500);
+  --color-success: var(--color-teal-500);
+  --color-warning: var(--color-orange-500);
+  --color-info: var(--color-slate-500);
+  --color-focus-ring: rgba(var(--color-teal-500-rgb), 0.4);
+  --color-select-caret: rgba(var(--color-slate-900-rgb), 0.8);
+
+  /* Typography */
+  --font-family-base: "FKGroteskNeue", "Geist", "Inter", -apple-system,
+    BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-size-xs: 11px;
+  --font-size-sm: 12px;
+  --font-size-base: 14px;
+  --font-size-md: 14px;
+  --font-size-lg: 16px;
+  --font-size-xl: 18px;
+  --font-size-2xl: 20px;
+  --font-size-3xl: 24px;
+  --font-size-4xl: 30px;
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 550;
+  --font-weight-bold: 600;
+  --line-height-tight: 1.2;
+  --line-height-normal: 1.5;
+
+  /* Spacing */
+  --space-8: 8px;
+  --space-12: 12px;
+  --space-16: 16px;
+  --space-20: 20px;
+  --space-24: 24px;
+  --space-32: 32px;
+  --space-48: 48px;
+  --space-64: 64px;
+
+  /* Border Radius */
+  --radius-sm: 6px;
+  --radius-base: 8px;
+  --radius-md: 10px;
+  --radius-lg: 12px;
+  --radius-full: 9999px;
+
+  /* Shadows */
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.04), 0 1px 2px rgba(0, 0, 0, 0.02);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.04),
+    0 2px 4px -1px rgba(0, 0, 0, 0.02);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.04),
+    0 4px 6px -2px rgba(0, 0, 0, 0.02);
+
+  /* Custom colors for Mirza Farms */
+  --green-primary: #2d5f2e;
+  --green-dark: #1f4620;
+  --green-light: #4a8a4c;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-gray-400-rgb: 119, 124, 124;
+    --color-teal-300-rgb: 50, 184, 198;
+    --color-gray-300-rgb: 167, 169, 169;
+    --color-gray-200-rgb: 245, 245, 245;
+
+    --color-bg-1: rgba(29, 78, 216, 0.15);
+    --color-bg-2: rgba(180, 83, 9, 0.15);
+    --color-bg-3: rgba(21, 128, 61, 0.15);
+    --color-bg-4: rgba(185, 28, 28, 0.15);
+    --color-bg-5: rgba(107, 33, 168, 0.15);
+    --color-bg-6: rgba(194, 65, 12, 0.15);
+    --color-bg-7: rgba(190, 24, 93, 0.15);
+    --color-bg-8: rgba(8, 145, 178, 0.15);
+
+    --color-background: var(--color-charcoal-700);
+    --color-surface: var(--color-charcoal-800);
+    --color-text: var(--color-gray-200);
+    --color-text-secondary: rgba(var(--color-gray-300-rgb), 0.7);
+    --color-primary: var(--color-teal-300);
+    --color-primary-hover: var(--color-teal-400);
+    --color-primary-active: var(--color-teal-800);
+    --color-secondary: rgba(var(--color-gray-400-rgb), 0.15);
+    --color-secondary-hover: rgba(var(--color-gray-400-rgb), 0.25);
+    --color-secondary-active: rgba(var(--color-gray-400-rgb), 0.3);
+    --color-border: rgba(var(--color-gray-400-rgb), 0.3);
+    --color-error: var(--color-red-400);
+    --color-success: var(--color-teal-300);
+    --color-warning: var(--color-orange-400);
+    --color-info: var(--color-gray-300);
+    --color-btn-primary-text: var(--color-slate-900);
+    --color-card-border: rgba(var(--color-gray-400-rgb), 0.2);
+    --color-card-border-inner: rgba(var(--color-gray-400-rgb), 0.15);
+  }
+}
+
+@font-face {
+  font-family: 'FKGroteskNeue';
+  src: url('https://r2cdn.perplexity.ai/fonts/FKGroteskNeue.woff2') format('woff2');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-family-base);
+    line-height: var(--line-height-normal);
+    color: var(--color-text);
+    background-color: var(--color-background);
+}
+
+/* Header Styles */
+.header {
+    background: linear-gradient(135deg, var(--green-primary) 0%, var(--green-dark) 100%);
+    color: var(--color-white);
+    padding: var(--space-32) var(--space-20);
+    text-align: center;
+    box-shadow: var(--shadow-lg);
+}
+
+.header__title {
+    font-size: 48px;
+    font-weight: var(--font-weight-bold);
+    margin-bottom: var(--space-12);
+    letter-spacing: 2px;
+}
+
+.header__tagline {
+    font-size: var(--font-size-xl);
+    margin-bottom: var(--space-16);
+    opacity: 0.95;
+}
+
+.header__phone {
+    font-size: var(--font-size-2xl);
+    font-weight: var(--font-weight-semibold);
+    color: var(--color-white);
+    text-decoration: none;
+    display: inline-block;
+    padding: var(--space-12) var(--space-24);
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: var(--radius-lg);
+    transition: all 0.3s ease;
+}
+
+.header__phone:hover {
+    background: rgba(255, 255, 255, 0.25);
+    transform: translateY(-2px);
+}
+
+/* Hero Section */
+.hero {
+    width: 100%;
+    max-height: 600px;
+    overflow: hidden;
+    position: relative;
+}
+
+.hero__image {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+/* Container */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 var(--space-20);
+}
+
+/* About Section */
+.about {
+    padding: var(--space-64) var(--space-20);
+    background: var(--color-bg-3);
+    text-align: center;
+}
+
+.about__title {
+    font-size: var(--font-size-3xl);
+    font-weight: var(--font-weight-bold);
+    margin-bottom: var(--space-24);
+    color: var(--green-primary);
+}
+
+.about__description {
+    font-size: var(--font-size-xl);
+    margin-bottom: var(--space-32);
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.about__info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: var(--space-32);
+    margin-top: var(--space-32);
+}
+
+.info-box {
+    background: var(--color-surface);
+    padding: var(--space-24);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-md);
+    min-width: 250px;
+    border: 1px solid var(--color-card-border);
+}
+
+.info-box__title {
+    font-size: var(--font-size-lg);
+    font-weight: var(--font-weight-semibold);
+    margin-bottom: var(--space-12);
+    color: var(--green-primary);
+}
+
+.info-box__text {
+    font-size: var(--font-size-base);
+    color: var(--color-text-secondary);
+}
+
+/* Products Section */
+.products {
+    padding: var(--space-64) var(--space-20);
+}
+
+.products__title {
+    font-size: var(--font-size-4xl);
+    font-weight: var(--font-weight-bold);
+    text-align: center;
+    margin-bottom: var(--space-48);
+    color: var(--green-primary);
+}
+
+.category {
+    margin-bottom: var(--space-64);
+}
+
+.category__title {
+    font-size: var(--font-size-3xl);
+    font-weight: var(--font-weight-semibold);
+    margin-bottom: var(--space-32);
+    color: var(--color-text);
+    padding-bottom: var(--space-12);
+    border-bottom: 3px solid var(--green-primary);
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: var(--space-32);
+}
+
+.product-card {
+    background: var(--color-surface);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow-md);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid var(--color-card-border);
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+}
+
+.product-card__image {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    background: var(--color-bg-1);
+}
+
+.product-card__content {
+    padding: var(--space-20);
+}
+
+.product-card__name {
+    font-size: var(--font-size-xl);
+    font-weight: var(--font-weight-semibold);
+    margin-bottom: var(--space-8);
+    color: var(--color-text);
+}
+
+.product-card__description {
+    font-size: var(--font-size-base);
+    color: var(--color-text-secondary);
+    margin-bottom: var(--space-20);
+    line-height: 1.6;
+}
+
+.product-card__button {
+    display: block;
+    width: 100%;
+    padding: var(--space-12) var(--space-20);
+    background: var(--green-primary);
+    color: var(--color-white);
+    text-align: center;
+    text-decoration: none;
+    border-radius: var(--radius-base);
+    font-weight: var(--font-weight-semibold);
+    font-size: var(--font-size-base);
+    transition: background 0.3s ease;
+    border: none;
+    cursor: pointer;
+}
+
+.product-card__button:hover {
+    background: var(--green-dark);
+}
+
+/* Gallery Section */
+.gallery {
+    padding: var(--space-64) var(--space-20);
+    background: var(--color-bg-2);
+}
+
+.gallery__title {
+    font-size: var(--font-size-4xl);
+    font-weight: var(--font-weight-bold);
+    text-align: center;
+    margin-bottom: var(--space-48);
+    color: var(--green-primary);
+}
+
+.gallery__subtitle {
+    font-size: var(--font-size-xl);
+    text-align: center;
+    margin-bottom: var(--space-32);
+    color: var(--color-text-secondary);
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: var(--space-20);
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-md);
+    transition: transform 0.3s ease;
+    aspect-ratio: 4/3;
+    background: var(--color-surface);
+}
+
+.gallery-item:hover {
+    transform: scale(1.03);
+}
+
+.gallery-item__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Footer */
+.footer {
+    background: var(--green-primary);
+    color: var(--color-white);
+    padding: var(--space-48) var(--space-20);
+    text-align: center;
+}
+
+.footer__content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.footer__title {
+    font-size: var(--font-size-3xl);
+    font-weight: var(--font-weight-bold);
+    margin-bottom: var(--space-24);
+}
+
+.footer__contact {
+    font-size: var(--font-size-xl);
+    margin-bottom: var(--space-32);
+}
+
+.footer__phone {
+    color: var(--color-white);
+    text-decoration: none;
+    font-weight: var(--font-weight-semibold);
+    font-size: var(--font-size-2xl);
+}
+
+.footer__whatsapp {
+    display: inline-block;
+    padding: var(--space-16) var(--space-32);
+    background: #25D366;
+    color: var(--color-white);
+    text-decoration: none;
+    border-radius: var(--radius-lg);
+    font-weight: var(--font-weight-semibold);
+    font-size: var(--font-size-lg);
+    margin: var(--space-24) 0;
+    transition: transform 0.3s ease;
+}
+
+.footer__whatsapp:hover {
+    transform: scale(1.05);
+}
+
+.footer__hours {
+    font-size: var(--font-size-lg);
+    margin: var(--space-20) 0;
+}
+
+.footer__certification {
+    font-size: var(--font-size-base);
+    margin-top: var(--space-24);
+    padding-top: var(--space-24);
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    font-style: italic;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .header__title {
+        font-size: 36px;
+    }
+
+    .header__tagline {
+        font-size: var(--font-size-lg);
+    }
+
+    .header__phone {
+        font-size: var(--font-size-lg);
+    }
+
+    .products__title,
+    .gallery__title {
+        font-size: var(--font-size-3xl);
+    }
+
+    .category__title {
+        font-size: var(--font-size-2xl);
+    }
+
+    .product-grid {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        gap: var(--space-20);
+    }
+
+    .gallery-grid {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    }
+
+    .about__info {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .header__title {
+        font-size: 28px;
+    }
+
+    .product-grid,
+    .gallery-grid {
+        grid-template-columns: 1fr;
+    }
+}
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <h1 class="header__title">MIRZA FARMS</h1>
+        <p class="header__tagline">Indian Pakistani Grocery | 100% Zabiha Halal Meat</p>
+        <a href="tel:+18723024171" class="header__phone">(872) 302-4171</a>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <img src="IMG-20251101-WA0030.jpg" alt="Mirza Farms Storefront" class="hero__image">
+    </section>
+
+    <!-- About Section -->
+    <section class="about">
+        <div class="container">
+            <h2 class="about__title">Premium 100% Zabiha Halal Hand Slaughter &amp; Daily Fresh Meat</h2>
+            <p class="about__description">
+                Experience the finest quality halal meats and Indian groceries. We take pride in our traditional hand-slaughter methods and provide only the freshest products to our community.
+            </p>
+            <div class="about__info">
+                <div class="info-box">
+                    <h3 class="info-box__title">Business Hours</h3>
+                    <p class="info-box__text">Monday - Sunday<br>11:00 AM - 11:00 PM<br></p>
+                </div>
+                <div class="info-box">
+                    <h3 class="info-box__title">Contact Us</h3>
+                    <p class="info-box__text">Phone: (773) 870-8613<br>WhatsApp Available<br>Same Day Orders Welcome</p>
+                </div>
+                <div class="info-box">
+                    <h3 class="info-box__title">Halal Certified</h3>
+                    <p class="info-box__text">100% Zabiha Halal<br>Hand Slaughtered Daily<br>Premium Quality Guaranteed</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products">
+        <div class="container">
+            <h2 class="products__title">Our Premium Products</h2>
+
+            <!-- Beef Products -->
+            <div class="category">
+                <h3 class="category__title">🥩 Premium Beef</h3>
+                <div class="product-grid">
+                    <div class="product-card">
+                        <img src="WholeBeef.jpg" alt="Whole Beef" class="product-card__image">
+                        <div class="product-card__content">
+                            <h4 class="product-card__name">Whole Beef</h4>
+                            <p class="product-card__description">Premium whole beef, halal certified. Perfect for large gatherings and special occasions.</p>
+                            <a href="https://wa.me/17738708613?text=Hi%20Mirza%20Farms!%20I'm%20interested%20in%20ordering%20Whole%20Beef" target="_blank" class="product-card__button">ORDER NOW</a>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <img src="IMG-20251101-WA0020.jpg" alt="Beef Cubes" class="product-card__image">
+                        <div class="product-card__content">
+                            <h4 class="product-card__name">Beef Cubes</h4>
+                            <p class="product-card__description">Fresh cut beef cubes, perfect for curries, kebabs, and traditional Indian dishes.</p>
+                            <a href="https://wa.me/17738708613?text=Hi%20Mirza%20Farms!%20I'm%20interested%20in%20ordering%20Beef%20Cubes" target="_blank" class="product-card__button">ORDER NOW</a>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <img src="GroundBeef.png" alt="Ground Beef" class="product-card__image">
+                        <div class="product-card__content">
+                            <h4 class="product-card__name">Ground Beef</h4>
+                            <p class="product-card__description">Freshly ground beef, ideal for kebabs, kofta, and your favorite recipes.</p>
+                            <a href="https://wa.me/17738708613?text=Hi%20Mirza%20Farms!%20I'm%20interested%20in%20ordering%20Ground%20Beef" target="_blank" class="product-card__button">ORDER NOW</a>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <img src="BeefSteak.jpg" alt="Beef Steaks" class="product-card__image">
+                        <div class="product-card__content">
+                            <h4 class="product-card__name">Beef Steaks</h4>
+                            <p class="product-card__description">Quality beef steaks, perfectly cut for grilling and special meals.</p>
+                            <a href="https://wa.me/17738708613?text=Hi%20Mirza%20Farms!%20I'm%20interested%20in%20ordering%20Beef%20Steaks" target="_blank" class="product-card__button">ORDER NOW</a>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <img src="BeefShank.jpg" alt="Beef Shanks" class="product-card__image">
+                        <div class="product-card__content">
+                            <h4 class="product-card__name">Beef Shanks</h4>
+                            <p class="product-card__description">Premium beef shanks, perfect for slow-cooked nihari and paya.</p>
+                            <a href="https://wa.me/17738708613?text=Hi%20Mirza%20Farms!%20I'm%20interested%20in%20ordering%20Beef%20Shanks" target="_blank" class="product-card__button">ORDER NOW</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Lamb/Goat Products -->
+            <div class="category">
+                <h3 class="category__title">🐑 Fresh Lamb &amp; Goat</h3>
+                <div class="product-grid">
+                    <div class="product-card">
+                        <img src="IMG-20251101-WA0012.jpg" alt="Lamb Cuts" class="product-card__image">
+                        <div class="product-card__content">
+                            <h4 class="product-card__name">Premium Lamb Cuts</h4>
+                            <p class="product-card__description">Premium lamb, halal certified. Fresh cuts perfect for all your favorite dishes.</p>
+                            <a href="https://wa.me/17738708613?text=Hi%20Mirza%20Farms!%20I'm%20interested%20in%20ordering%20Lamb%20Cuts" target="_blank" class="product-card__button">ORDER NOW</a>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <img src="FreshGoatMeat.png" alt="Goat Meat" class="product-card__image">
+                        <div class="product-card__content">
+                            <h4 class="product-card__name">Fresh Goat Meat</h4>
+                            <p class="product-card__description">Fresh goat meat, perfect for biryani, curries, and traditional recipes.</p>
+                            <a href="https://wa.me/17738708613?text=Hi%20Mirza%20Farms!%20I'm%20interested%20in%20ordering%20Goat%20Meat" target="_blank" class="product-card__button">ORDER NOW</a>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <img src="IMG-20251101-WA0022.jpg" alt="Whole Lamb" class="product-card__image">
+                        <div class="product-card__content">
+                            <h4 class="product-card__name">Whole Lamb</h4>
+                            <p class="product-card__description">Complete whole lamb, ideal for celebrations and special occasions.</p>
+                            <a href="https://wa.me/17738708613?text=Hi%20Mirza%20Farms!%20I'm%20interested%20in%20ordering%20Whole%20Lamb" target="_blank" class="product-card__button">ORDER NOW</a>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <img src="LambChops.png" alt="Lamb Chops" class="product-card__image">
+                        <div class="product-card__content">
+                            <h4 class="product-card__name">Lamb Chops</h4>
+                            <p class="product-card__description">Tender lamb chops, perfectly cut for grilling and roasting.</p>
+                            <a href="https://wa.me/17738708613?text=Hi%20Mirza%20Farms!%20I'm%20interested%20in%20ordering%20Lamb%20Chops" target="_blank" class="product-card__button">ORDER NOW</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Chicken Products -->
+            <div class="category">
+                <h3 class="category__title">🐔 Fresh Halal Chicken</h3>
+                <div class="product-grid">
+                    <div class="product-card">
+                        <img src="WholeChicken.jpg" alt="Whole Chicken" class="product-card__image">
+                        <div class="product-card__content">
+                            <h4 class="product-card__name">Whole Chicken</h4>
+                            <p class="product-card__description">Fresh halal chicken, hand-slaughtered daily according to Islamic guidelines.</p>
+                            <a href="https://wa.me/17738708613?text=Hi%20Mirza%20Farms!%20I'm%20interested%20in%20ordering%20Whole%20Chicken" target="_blank" class="product-card__button">ORDER NOW</a>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <img src="IMG-20251101-WA0013.jpg" alt="Chicken Breast" class="product-card__image">
+                        <div class="product-card__content">
+                            <h4 class="product-card__name">Chicken Breast</h4>
+                            <p class="product-card__description">Lean chicken breast, perfect for healthy meals and quick cooking.</p>
+                            <a href="https://wa.me/17738708613?text=Hi%20Mirza%20Farms!%20I'm%20interested%20in%20ordering%20Chicken%20Breast" target="_blank" class="product-card__button">ORDER NOW</a>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <img src="ChickenLegs.jpg" alt="Chicken Legs" class="product-card__image">
+                        <div class="product-card__content">
+                            <h4 class="product-card__name">Chicken Legs</h4>
+                            <p class="product-card__description">Juicy chicken legs, great for BBQ, curries, and family meals.</p>
+                            <a href="https://wa.me/17738708613?text=Hi%20Mirza%20Farms!%20I'm%20interested%20in%20ordering%20Chicken%20Legs" target="_blank" class="product-card__button">ORDER NOW</a>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <img src="ChickenWings.jpg" alt="Chicken Wings" class="product-card__image">
+                        <div class="product-card__content">
+                            <h4 class="product-card__name">Chicken Wings</h4>
+                            <p class="product-card__description">Fresh chicken wings, perfect for grilling and marinating.</p>
+                            <a href="https://wa.me/17738708613?text=Hi%20Mirza%20Farms!%20I'm%20interested%20in%20ordering%20Chicken%20Wings" target="_blank" class="product-card__button">ORDER NOW</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery">
+        <div class="container">
+            <h2 class="gallery__title">Our Facility &amp; Operations</h2>
+            <p class="gallery__subtitle">Take a look at our professional, clean, and halal-certified operation</p>
+            
+            <div class="gallery-grid">
+                <!-- Processing Area -->
+                <div class="gallery-item">
+                    <img src="IMG-20251101-WA0007.jpg" alt="Professional Processing Area" class="gallery-item__image">
+                </div>
+                <div class="gallery-item">
+                    <img src="IMG-20251101-WA0009.jpg" alt="Clean Processing Facility" class="gallery-item__image">
+                </div>
+                
+                <!-- Storage -->
+                <div class="gallery-item">
+                    <img src="IMG-20251101-WA0036.jpg" alt="Refrigerated Storage with Hanging Meat" class="gallery-item__image">
+                </div>
+                <div class="gallery-item">
+                    <img src="IMG-20251101-WA0038.jpg" alt="Professional Meat Storage" class="gallery-item__image">
+                </div>
+                
+                <!-- Display Cases -->
+                <div class="gallery-item">
+                    <img src="IMG-20251101-WA0015.jpg" alt="Modern Refrigerated Display Cases" class="gallery-item__image">
+                </div>
+                <div class="gallery-item">
+                    <img src="IMG-20251101-WA0016.jpg" alt="Fresh Meat Display" class="gallery-item__image">
+                </div>
+                <div class="gallery-item">
+                    <img src="IMG-20251101-WA0017.jpg" alt="Quality Display Cases" class="gallery-item__image">
+                </div>
+                
+                <!-- Delivery -->
+                <div class="gallery-item">
+                    <img src="IMG-20251101-WA0014.jpg" alt="Delivery Truck" class="gallery-item__image">
+                </div>
+                
+                <!-- Products -->
+                <div class="gallery-item">
+                    <img src="IMG-20251101-WA0018.jpg" alt="Premium Beef Products" class="gallery-item__image">
+                </div>
+                <div class="gallery-item">
+                    <img src="IMG-20251101-WA0019.jpg" alt="Fresh Beef Cuts" class="gallery-item__image">
+                </div>
+                <div class="gallery-item">
+                    <img src="IMG-20251101-WA0020.jpg" alt="Ground Beef" class="gallery-item__image">
+                </div>
+                <div class="gallery-item">
+                    <img src="IMG-20251101-WA0022.jpg" alt="Fresh Lamb" class="gallery-item__image">
+                </div>
+                <div class="gallery-item">
+                    <img src="IMG-20251101-WA0023.jpg" alt="Goat Meat" class="gallery-item__image">
+                </div>
+                <div class="gallery-item">
+                    <img src="IMG-20251101-WA0012.jpg" alt="Fresh Halal Chicken" class="gallery-item__image">
+                </div>
+                
+                <!-- Additional Facility Photos -->
+                <div class="gallery-item">
+                    <img src="IMG-20251101-WA0006.jpg" alt="Facility Interior" class="gallery-item__image">
+                </div>
+                <div class="gallery-item">
+                    <img src="IMG-20251101-WA0008.jpg" alt="Store Operations" class="gallery-item__image">
+                </div>
+                <div class="gallery-item">
+                    <img src="IMG-20251101-WA0011.jpg" alt="Product Preparation" class="gallery-item__image">
+                </div>
+                <div class="gallery-item">
+                    <img src="IMG-20251101-WA0013.jpg" alt="Store View" class="gallery-item__image">
+                </div>
+                <div class="gallery-item">
+                    <img src="IMG-20251101-WA0030.jpg" alt="Mirza Farms Storefront" class="gallery-item__image">
+                </div>
+                <div class="gallery-item">
+                    <img src="mirza.farms_Chicago.IL_CF_3c68.jpg" alt="Mirza Farms Storefront" class="gallery-item__image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer__content">
+            <h2 class="footer__title">MIRZA FARMS</h2>
+            <div class="footer__contact">
+                <p>Contact us today for your halal meat needs</p>
+                <a href="tel:+18723024171" class="footer__phone">(872) 302-4171</a>
+            </div>
+            <a href="https://wa.me/17738708613?text=Hi%20Mirza%20Farms!%20I'd%20like%20to%20place%20an%20order" target="_blank" class="footer__whatsapp">📱 Order via WhatsApp</a>
+            <div class="footer__hours">
+                <strong>Business Hours</strong><br>
+                Monday - Sunday: 11:00 AM - 11:00 PM<br>
+                
+            </div>
+            <p class="footer__certification">
+                ✓ 100% Zabiha Halal Hand Slaughter &amp; Daily Fresh Meat<br>
+                Indian Pakistani Grocery | Premium Quality Guaranteed
+            </p>
+        </div>
+    </footer>
+</body>
+</html>
